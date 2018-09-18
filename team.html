@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<title>ITS Leadership Council</title>
+<meta charset="utf-8">
+</head>
+<body>
+ <header>
+    <center><h1>Meet the Members</h1></center>
+    <div class="MyNav">
+ 	<a href="ITS.html">Home</a>
+ 	<a href="team.html">Meet The Team</a>
+ 	<a href="about.html">About the ITS Program</a>
+ 	<a href="projects.html">Projects</a>
+ 	<a href="contact.html">Contact Us</a>
+    </div>
+ </header>
+ <div class="team">
+   <div class="members">
+   <img src="https://i.groupme.com/336x322.png.b470090826ce45ccbc3347ebf44217fd.preview" alt="Sarah">
+   </div>
+   <div class="text">Sarah Tse</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/960x1280.jpeg.3161b616d96e4f92a28945b21d2aa3cb.preview" alt="Alma">
+   </div>
+   <div class="text">Alma Semock</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x750.jpeg.529d49a46a874f60bac1d8b1fc3ff0aa.preview" alt="Bhavana">
+   </div>
+   <div class="text">Bhavana Keepudi</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/1024x1024.jpeg.5a466ad3f6364966b538a484b0b5ebc5.preview" alt="Bik">
+   </div>
+   <div class="text">Bik Pokhrel</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/640x640.jpeg.9042a9e51e8545abb6f7429935011c07.preview" alt="Chandrika">
+   </div>
+   <div class="text">Chandrika Bodduru</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x750.jpeg.fee4ddb38a4f4db58e1ac8fe6a4eeb3a.preview" alt="Hayden">
+   </div>
+   <div class="text">Hayden Reid</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/300x300.png.6485c42fdeaa45b5a4b986b9cb1c91a2.preview" alt="Joshua">
+   </div>
+   <div class="text">Joshua Banh</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x688.jpeg.4c5d38325f944de59d49d970a7f1a11b.preview" alt="Nadia">
+   </div>
+   <div class="text">Nadia</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/748x688.jpeg.033966aef09c45e498a526db3a1a58cb.preview" alt="Nawal">
+   </div>
+   <div class="text">Nawal A.</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/972x1296.png.76d6a49778ae42eeb7724ac9fc0bfa83.preview" alt="Noelle">
+   </div>
+   <div class="text">Noelle Rivera</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x750.jpeg.659cf75b30eb424c946b96a48bfa3efd.preview" alt="Praneetha>
+   </div>
+   <div class="text"><b>Praneetha Pratapa</b></div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/200x200.jpeg.21da8cee817f4177988e65679754b3ac.preview" alt="Shreyas">
+   </div>
+   <div class="text">Shreyas Tandulwadikar</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x750.jpeg.54a120e2c8554657a07a98b2ee0039c5.preview" alt="Simon">
+   </div>
+   <div class="text">Simon Omagah</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/720x1280.jpeg.22cffd5e777844728f31e02f1fb2f78f.preview" alt="Sravya">
+   </div>
+   <div class="text">Sravya Vemulapati</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/750x750.jpeg.922c00a9c1114121a93703cb87adc14c.preview" alt=Steven">
+   </div>
+   <div class="text">Steven John</div>
+
+   <div class="members">
+   <img src="https://i.groupme.com/1440x1920.jpeg.0422cdaf62584e28ae31343f53cebaff.preview" alt="Val">
+   </div>
+   <div class="text">Valerie</div></div>
+<button onClick="ChangeView()">ChangeView</button>
+<button onClick="DefaultView()">DefaultView</button>
+
+
+<script>
+	var objects=document.getElementsByClassName("members");
+	var loop;
+	function ChangeView() {
+		for(loop=0; loop<objects.length; loop++) {
+			objects[loop].style.flex="50%";
+		}
+	}
+	function DefaultView() {
+		for(loop=0; loop<objects.length; loop++) {
+			objects[loop].style.flex="0%";
+		}
+	}
+ 
+</script>
+</body>
+<style>
+body {
+  background-color: white;
+
+}
+  header { 
+  background-color: orange;
+  max-width: 100%
+
+}
+  img {
+  width: stretch;
+  height: auto;
+  image-resolution: from-image;
+  
+ 
+}
+  
+ .MyNav {
+  background-color: black;
+ }
+ .MyNav a {
+  float:center;
+  font-size:25px;
+  text-align: right;
+  padding: 10px 74px;
+  text-color: red;
+  
+ }
+ .MyNav a:hover {
+  background-color: red;
+  color: black;
+ }
+.team {
+   display: inline-flex;
+   flex-wrap: wrap;
+   padding: 0 5px;
+}
+
+.members {
+   flex: 9%;
+   padding: 0 5px;
+
+}
+.members img {
+    margin-top: 10px;
+    vertical-align: middle;
+    
+}
+	.text {
+	align-self:center;
+	text-size: 4px;
+	font-weight: bold;
+	
+	
+	}
+
+
+</style>
+</html>
